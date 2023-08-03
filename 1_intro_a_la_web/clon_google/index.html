@@ -1,22 +1,84 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Google Clon</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+<!--
+* Rubén Ramírez Cervantes
+* ruben.ramirez.cervantes.rrc@gmail.com
+*
+* Ejecutar en terminal linux: xdg-open index.html
+-->
+
+<!-- Documento tipo html -->
+<!DOCTYPE html>
+
+<!-- Lenguaje "español" del documento -->
+<html lang="es">
+
+<!-- Metainformación -->
+    <head>
+        <meta chatset="utf-8"/>
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <title>Google Clone</title>
+
+        <link rel="shortcut icon" type="image/png" href="recursos/icono_google.png"/>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+    </head>
+
+<!-- Cuerpo de la página visible -->
+    <body>
+        <header class="header">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#" class="header__link">Gmail</a></li>
+                <li class="header__list-item"><a href="#" class="header__link">Imágenes</a></li>
+                <li class="header__list-item"><a href="#" class="header__link apps-button">
+                    <img src="recursos/apps_google.png" alt="Aplicaciones de Google"/></a></li>
+
+                <li class="header__list-item"><a href="#" class="header__link simple-button-1">Iniciar sesión</a></li>
             </ul>
-        </nav>
-    </header>
-</body>
+        </header>
+
+        <!-- Elemento main -->
+        <main class="main">
+			<section class="logo-container">
+				<img class="logo-img" src="recursos/logo_google.png" alt="Google"/>
+			</section>
+
+			<section class="search-bar">
+				<div class="search-bar__text-container">
+					<img class="search-bar__search-icon" src="recursos/lupa.png"/>
+					<input class="search-bar__text-input" type="text" id="search-bar"/>
+				</div>
+
+				<div class="search-bar__buttons-container">
+					<input class="search-bar__button" type="submit" value="Buscar con Google"/>
+					<input class="search-bar__button" type="submit" value="Me siento con suerte"/>
+				</div>
+			</section>
+		</main>
+
+        <!-- pie de página -->
+        <footer class="footer">
+
+            <section class="footer__section footer__section--bottom-line">
+                <span class="footer__language">México</span>
+            </section>
+
+            <nav class="footer__section footer__section--spaced-items">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a class="footer__link" href="#">Sobre Google</a></li>
+                    <li class="footer__list-item"><a class="footer__link" href="#">Publicidad</a></li>
+                    <li class="footer__list-item"><a class="footer__link" href="#">Negocios</a></li>
+                    <li class="footer__list-item"><a class="footer__link" href="#">Cómo funciona la búsqueda</a></li>
+                </ul>
+
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a class="footer__link" href="#">Privacidad</a></li>
+                    <li class="footer__list-item"><a class="footer__link" href="#">Condiciones</a></li>
+                    <li class="footer__list-item footer__list-item--no-margin-right">
+                        <a class="footer__link" href="#">Preferencias</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+<!-- Fin del programa -->
+
 </html>
+<!-- Fin del documento html -->
